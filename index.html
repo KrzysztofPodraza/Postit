@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <div class="addPostPop display-none">
+      <form class="flex-col addPostForm">
+        <label for="title" style="margin-top: 0">Title</label>
+        <input
+          required
+          class="addPostPop_title"
+          placeholder="Egypt"
+          id="title"
+        />
+        <label for="description">Description</label>
+        <textarea
+          required
+          id="description"
+          placeholder="Last week I was in Egypt!"
+        ></textarea>
+        <label for="imgUrl">Image url</label>
+        <input
+          required
+          id="imgUrl"
+          placeholder="img url"
+          style="font-size: 1rem"
+        />
+        <button type="submit">Post it!</button>
+      </form>
+    </div>
+    <div class="blinder display-none"></div>
+    <div class="container">
+      <p class="logo">Post it!</p>
+      <div class="spacer"></div>
+      <button class="addPost">
+        <div
+          style="
+            display: flex;
+            width: 10rem;
+            margin-left: auto;
+            margin-right: auto;
+            flex-grow: 1;
+          "
+        >
+          <svg
+            width="2rem"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M21.5 0V42" stroke="#BA7070" stroke-width="3" />
+            <path d="M0 21L42 21" stroke="#BA7070" stroke-width="3" />
+          </svg>
+          <p class="addPost_p">Add Post</p>
+        </div>
+      </button>
+      <div class="posts-container">
+        <div class="post">
+          <div class="post_top_box">
+            <image class="post_avatar" src="./assets/avatar.png"></image>
+            <p class="post_name">Hannah</p>
+          </div>
+          <image class="post_picture" src="./assets/egypt.png"></image>
+          <div class="post_bottom_box">
+            <p class="post_title">Egypt</p>
+            <p class="post_text">I was in Egypt last week! :D</p>
+            <p class="post_date">posted 24 minutes ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>

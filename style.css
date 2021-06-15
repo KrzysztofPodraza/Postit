@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  width: 40%;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: auto;
+}
+.logo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2b2b2b;
+  margin: 1rem;
+}
+.spacer {
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+}
+.addPost {
+  width: 34rem;
+  border: 0px;
+  border-radius: 2rem;
+  height: 4rem;
+  margin: 1rem;
+  box-shadow: 0px 1px 5px rgb(173, 173, 173);
+  transition: 300ms;
+}
+.addPost_p {
+  text-align: center;
+  color: #ba7070;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.addPost:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.posts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.post {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #f5f5f5;
+  max-height: 30rem;
+}
+.post_top_box {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 3rem;
+}
+.post_bottom_box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 94%;
+  max-height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.post_avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: auto;
+  margin-left: 1rem;
+}
+.post_name {
+  width: 90%;
+  margin-left: 1rem;
+  align-self: center;
+}
+.post_picture {
+  width: 100%;
+  max-height: 20rem;
+}
+.post_title {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 60%;
+}
+.post_text {
+  margin-top: 1rem;
+}
+.post_date {
+  color: #999999;
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: small;
+}
+.addPostPop {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 24rem;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.addPostPop label {
+  font-size: 20px;
+  color: #3d3d3d;
+  margin-top: 1rem;
+}
+.addPostPop textarea {
+  border-radius: 10px;
+  max-width: 29.5rem;
+  min-width: 29.5rem;
+  max-height: 8rem;
+  min-height: 8rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  border: 1px solid rgb(211, 211, 211);
+}
+.addPostPop #imgUrl {
+  margin-bottom: 1rem;
+}
+.addPostPop input {
+  padding-left: 1rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(211, 211, 211);
+}
+.addPostPop button {
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: #ba7070;
+  color: white;
+  transition: 300ms;
+}
+.addPostPop button:hover {
+  cursor: pointer;
+  background-color: #c37d7d;
+}
+.blinder {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgb(29, 29, 29);
+  opacity: 0.6;
+  position: fixed;
+  z-index: 1;
+}
+.display-none {
+  display: none;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 57%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .addPost {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
+  .addPostPop {
+    width: 90%;
+  }
+}
